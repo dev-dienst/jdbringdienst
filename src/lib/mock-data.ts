@@ -2,6 +2,7 @@ import eierEickhaus from "@/assets/eier-eickhaus.jpg";
 import hofEickhausStall from "@/assets/hof-eickhaus-stall.jpg";
 import fechnerFeld from "@/assets/fechner-feld.jpg";
 import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
+import fechnerKartoffelnTueten from "@/assets/fechner-kartoffeln-tueten.jpg";
 
 export interface Product {
   id: string;
@@ -68,8 +69,8 @@ export const products: Product[] = [
     farmer: "Schwafheimer Hofladen Fechner (Moers-Schwafheim)",
     description:
       "Frische Kartoffeln vom Schwafheimer Hofladen Fechner. Bauer Fechner baut Kartoffeln auf einer Fläche so groß wie rund 250 Fußballfelder an. Erhältlich in den Sorten festkochend, vorwiegend festkochend und mehlig. Preis: 2,00 € pro kg – ab 5 kg nur 1,60 € pro kg.",
-    image: fechnerKartoffeln,
-    images: [fechnerKartoffeln, fechnerFeld],
+    image: fechnerKartoffelnTueten,
+    images: [fechnerKartoffelnTueten, fechnerKartoffeln, fechnerFeld],
     badge: "Regional",
     husbandry: "Festkochend, vorwiegend festkochend und mehlig – ab 5 kg 1,60 €/kg",
   },
