@@ -25,7 +25,7 @@ const Index = () => {
           <div className="container relative py-24 md:py-36">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold leading-tight text-primary-foreground md:text-5xl lg:text-6xl" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Frisch vom Feld – direkt zu dir
+                Frisch vom Feld aus der Region von ausgewählten Bauern mit der besten Qualität
               </h1>
               <p className="mt-4 text-lg text-primary-foreground/80" style={{ fontFamily: "'Lora', serif" }}>
                 Entdecke frische, regionale Produkte von Bauern aus deiner Nähe. Natürlich, saisonal und mit Liebe erzeugt.
