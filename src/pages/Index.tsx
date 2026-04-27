@@ -8,6 +8,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { categories, products } from "@/lib/mock-data";
 import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
+import hofEickhausStall2 from "@/assets/hof-eickhaus-stall-2.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
