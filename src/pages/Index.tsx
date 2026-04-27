@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,12 +6,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { categories, products } from "@/lib/mock-data";
-import { ArrowRight, Truck, Leaf, Heart } from "lucide-react";
+import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
 const Index = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
