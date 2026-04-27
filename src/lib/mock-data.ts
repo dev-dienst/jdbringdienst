@@ -3,6 +3,8 @@ import hofEickhausStall from "@/assets/hof-eickhaus-stall.jpg";
 import fechnerFeld from "@/assets/fechner-feld.jpg";
 import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
 import fechnerKartoffelnTueten from "@/assets/fechner-kartoffeln-tueten.jpg";
+import erdbeerenSchalen from "@/assets/erdbeeren-schalen.jpg";
+import erdbeerenFeld from "@/assets/erdbeeren-feld.jpg";
 
 export interface Product {
   id: string;
@@ -77,13 +79,14 @@ export const products: Product[] = [
   {
     id: "4",
     name: "Frische Erdbeeren",
-    price: 5.90,
-    unit: "500g",
+    price: 5.50,
+    unit: "500g Schale",
     category: "erdbeeren",
     farmer: "Beerenhof Sommerfeld",
     description:
-      "Sonnengereifte Erdbeeren, frisch vom Feld gepflückt. Süß, aromatisch und voller Geschmack.",
-    image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400&h=400&fit=crop",
+      "Sonnengereifte Erdbeeren, frisch vom Feld gepflückt. Süß, aromatisch und voller Geschmack. 5,50 € pro 500g Schale.",
+    image: erdbeerenSchalen,
+    images: [erdbeerenSchalen, erdbeerenFeld],
     badge: "Saison",
   },
 ];
