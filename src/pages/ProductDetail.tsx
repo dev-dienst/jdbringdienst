@@ -40,13 +40,28 @@ const ProductDetail = () => {
           </Button>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {/* Image */}
-            <div className="overflow-hidden rounded-xl">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="aspect-square h-full w-full object-cover"
-              />
+            {/* Images */}
+            <div className="space-y-3">
+              <div className="overflow-hidden rounded-xl">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="aspect-square h-full w-full object-cover"
+                />
+              </div>
+              {product.images && product.images.length > 1 && (
+                <div className="grid grid-cols-2 gap-3">
+                  {product.images.slice(1).map((img, idx) => (
+                    <div key={idx} className="overflow-hidden rounded-xl">
+                      <img
+                        src={img}
+                        alt={`${product.name} – Eindruck vom Hof`}
+                        className="aspect-square h-full w-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Info */}
@@ -66,6 +81,13 @@ const ProductDetail = () => {
               <p className="mt-6 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
                 {product.description}
               </p>
+
+              {product.husbandry && (
+                <div className="mt-4 rounded-lg border border-primary/20 bg-primary/5 p-4">
+                  <p className="text-sm font-semibold text-primary">Haltung</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{product.husbandry}</p>
+                </div>
+              )}
 
               <div className="mt-8">
                 <span className="text-3xl font-bold text-primary">
