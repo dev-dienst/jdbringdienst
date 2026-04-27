@@ -162,6 +162,56 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Hof Eickhaus */}
+        <section className="py-16">
+          <div className="container">
+            <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border/50 bg-card shadow-sm">
+              <div className="grid md:grid-cols-2">
+                <div className="relative aspect-[4/3] md:aspect-auto">
+                  <img
+                    src={hofEickhausStall2}
+                    alt="Stall vom Hof Eickhaus mit offenem und geschlossenem Bereich"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="flex flex-col justify-center p-6 md:p-10">
+                  <span className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Unser Partner
+                  </span>
+                  <h2 className="mt-2 text-2xl font-bold md:text-3xl" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    Hof Eickhaus – Frische Eier
+                  </h2>
+                  <p className="mt-4 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
+                    Die Hühner vom Hof Eickhaus werden mit eigener Fütterung versorgt
+                    und im hofeigenen Stall gehalten. Der Stall verfügt über einen
+                    geschlossenen sowie einen offenen Bereich, sodass die Hühner
+                    ausreichend Platz und Sonne haben.
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-2 gap-3">
+                    <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
+                      <p className="text-sm text-muted-foreground">Eier Größe M</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">0,33 €</p>
+                      <p className="text-xs text-muted-foreground">pro Stück</p>
+                    </div>
+                    <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
+                      <p className="text-sm text-muted-foreground">Eier Größe L</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">0,38 €</p>
+                      <p className="text-xs text-muted-foreground">pro Stück</p>
+                    </div>
+                  </div>
+
+                  <Button asChild className="mt-6 w-fit rounded-full">
+                    <Link to="/produkte?kategorie=eier">
+                      Eier ansehen <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* About */}
         <section className="py-16">
           <div className="container">
