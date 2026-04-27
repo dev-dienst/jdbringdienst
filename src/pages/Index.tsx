@@ -27,9 +27,45 @@ const Index = () => {
               <h1 className="text-4xl font-bold leading-tight text-primary-foreground md:text-5xl lg:text-6xl" style={{ fontFamily: "'Playfair Display', serif" }}>
                 Frisch vom Feld aus der Region von ausgewählten Bauern mit der besten Qualität
               </h1>
-              <p className="mt-4 text-lg text-primary-foreground/80" style={{ fontFamily: "'Lora', serif" }}>
-                Entdecke frische, regionale Produkte von Bauern aus deiner Nähe. Natürlich, saisonal und mit Liebe erzeugt.
+              <p className="mt-4 text-lg font-medium text-primary-foreground/90" style={{ fontFamily: "'Lora', serif" }}>
+                Frische Lebensmittel direkt vom Bauernhof – geliefert zu dir nach Hause.
               </p>
+              <div className="mt-4 space-y-4 text-base text-primary-foreground/80" style={{ fontFamily: "'Lora', serif" }}>
+                <p>
+                  Ich fahre regelmäßig zu ausgewählten Höfen in der Region und bringe dir Eier,
+                  Kartoffeln und Erdbeeren direkt vorbei. Ohne Zwischenhandel, ohne lange Lagerung.
+                </p>
+                <div>
+                  <p className="font-semibold text-primary-foreground">Meine Partner:</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5">
+                    <li>Schwafheimer Hofladen Fechner (Moers-Schwafheim) – verschiedene Kartoffelsorten</li>
+                    <li>Hof Eickhaus (Moers-Schwafheim) – Eier</li>
+                    <li>Wickrather Bauernladen Klanten (Kamp-Lintfort) – Erdbeeren</li>
+                    <li>Schmücker Hof (Bottrop) – Erdbeeren</li>
+                  </ul>
+                </div>
+                <p>Die Lieferung erfolgt in der Regel einmal pro Woche.</p>
+                <p>
+                  Du entscheidest jedes Mal selbst, ob und was du bestellen möchtest.
+                  Keine Verpflichtung, kein Abo.
+                </p>
+                <div>
+                  <p className="font-semibold text-primary-foreground">Geeignet für:</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5">
+                    <li>Menschen mit wenig Zeit,</li>
+                    <li>Personen die keine Möglichkeit haben, selbst zu den Höfen zu kommen</li>
+                    <li>und für alle die Wert auf regionale und frische Produkte legen</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold text-primary-foreground">Vorteile:</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-5">
+                    <li>beste Qualität</li>
+                    <li>direkte Unterstützung der Landwirte</li>
+                    <li>faire Preise</li>
+                  </ul>
+                </div>
+              </div>
               <div className="mt-8 flex gap-3">
                 <Button asChild size="lg" className="rounded-full">
                   <Link to="/produkte">
