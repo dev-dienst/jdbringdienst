@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -5,12 +6,13 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { categories, products } from "@/lib/mock-data";
-import { ArrowRight, Truck, Leaf, Heart } from "lucide-react";
+import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
 const Index = () => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
@@ -30,42 +32,58 @@ const Index = () => {
               <p className="mt-4 text-lg font-medium text-primary-foreground/90" style={{ fontFamily: "'Lora', serif" }}>
                 Frische Lebensmittel direkt vom Bauernhof – geliefert zu dir nach Hause.
               </p>
-              <div className="mt-4 space-y-4 text-base text-primary-foreground/80" style={{ fontFamily: "'Lora', serif" }}>
-                <p>
-                  Ich fahre regelmäßig zu ausgewählten Höfen in der Region und bringe dir Eier,
-                  Kartoffeln und Erdbeeren direkt vorbei. Ohne Zwischenhandel, ohne lange Lagerung.
-                </p>
-                <div>
-                  <p className="font-semibold text-primary-foreground">Meine Partner:</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5">
-                    <li>Schwafheimer Hofladen Fechner (Moers-Schwafheim) – verschiedene Kartoffelsorten</li>
-                    <li>Hof Eickhaus (Moers-Schwafheim) – Eier</li>
-                    <li>Wickrather Bauernladen Klanten (Kamp-Lintfort) – Erdbeeren</li>
-                    <li>Schmücker Hof (Bottrop) – Erdbeeren</li>
-                  </ul>
-                </div>
-                <p>Die Lieferung erfolgt in der Regel einmal pro Woche.</p>
-                <p>
-                  Du entscheidest jedes Mal selbst, ob und was du bestellen möchtest.
-                  Keine Verpflichtung, kein Abo.
-                </p>
-                <div>
-                  <p className="font-semibold text-primary-foreground">Geeignet für:</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5">
-                    <li>Menschen mit wenig Zeit,</li>
-                    <li>Personen die keine Möglichkeit haben, selbst zu den Höfen zu kommen</li>
-                    <li>und für alle die Wert auf regionale und frische Produkte legen</li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary-foreground">Vorteile:</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-5">
-                    <li>beste Qualität</li>
-                    <li>direkte Unterstützung der Landwirte</li>
-                    <li>faire Preise</li>
-                  </ul>
-                </div>
+              <div className="mt-4">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setShowMore((v) => !v)}
+                  className="rounded-full bg-background/10 text-primary-foreground border-primary-foreground/40 hover:bg-background/20 hover:text-primary-foreground backdrop-blur"
+                >
+                  {showMore ? (
+                    <>Weniger anzeigen <ChevronUp className="ml-2 h-4 w-4" /></>
+                  ) : (
+                    <>Mehr erfahren <ChevronDown className="ml-2 h-4 w-4" /></>
+                  )}
+                </Button>
               </div>
+              {showMore && (
+                <div className="mt-6 space-y-4 text-base text-primary-foreground/80 animate-in fade-in slide-in-from-top-2 duration-300" style={{ fontFamily: "'Lora', serif" }}>
+                  <p>
+                    Ich fahre regelmäßig zu ausgewählten Höfen in der Region und bringe dir Eier,
+                    Kartoffeln und Erdbeeren direkt vorbei. Ohne Zwischenhandel, ohne lange Lagerung.
+                  </p>
+                  <div>
+                    <p className="font-semibold text-primary-foreground">Meine Partner:</p>
+                    <ul className="mt-2 list-disc space-y-1 pl-5">
+                      <li>Schwafheimer Hofladen Fechner (Moers-Schwafheim) – verschiedene Kartoffelsorten</li>
+                      <li>Hof Eickhaus (Moers-Schwafheim) – Eier</li>
+                      <li>Wickrather Bauernladen Klanten (Kamp-Lintfort) – Erdbeeren</li>
+                      <li>Schmücker Hof (Bottrop) – Erdbeeren</li>
+                    </ul>
+                  </div>
+                  <p>Die Lieferung erfolgt in der Regel einmal pro Woche.</p>
+                  <p>
+                    Du entscheidest jedes Mal selbst, ob und was du bestellen möchtest.
+                    Keine Verpflichtung, kein Abo.
+                  </p>
+                  <div>
+                    <p className="font-semibold text-primary-foreground">Geeignet für:</p>
+                    <ul className="mt-2 list-disc space-y-1 pl-5">
+                      <li>Menschen mit wenig Zeit,</li>
+                      <li>Personen die keine Möglichkeit haben, selbst zu den Höfen zu kommen</li>
+                      <li>und für alle die Wert auf regionale und frische Produkte legen</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-primary-foreground">Vorteile:</p>
+                    <ul className="mt-2 list-disc space-y-1 pl-5">
+                      <li>beste Qualität</li>
+                      <li>direkte Unterstützung der Landwirte</li>
+                      <li>faire Preise</li>
+                    </ul>
+                  </div>
+                </div>
+              )}
               <div className="mt-8 flex gap-3">
                 <Button asChild size="lg" className="rounded-full">
                   <Link to="/produkte">
