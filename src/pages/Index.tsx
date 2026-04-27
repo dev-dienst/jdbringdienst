@@ -9,6 +9,8 @@ import { categories, products } from "@/lib/mock-data";
 import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
 import hofEickhausStall2 from "@/assets/hof-eickhaus-stall-2.jpg";
+import fechnerFeld from "@/assets/fechner-feld.jpg";
+import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
