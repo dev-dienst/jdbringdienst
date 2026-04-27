@@ -9,6 +9,8 @@ import { categories, products } from "@/lib/mock-data";
 import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
 import hofEickhausStall2 from "@/assets/hof-eickhaus-stall-2.jpg";
+import fechnerFeld from "@/assets/fechner-feld.jpg";
+import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
@@ -206,6 +208,66 @@ const Index = () => {
                       Eier ansehen <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Schwafheimer Hofladen Fechner */}
+        <section className="pb-16">
+          <div className="container">
+            <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border/50 bg-card shadow-sm">
+              <div className="grid md:grid-cols-2">
+                <div className="order-2 flex flex-col justify-center p-6 md:order-1 md:p-10">
+                  <span className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Unser Partner
+                  </span>
+                  <h2 className="mt-2 text-2xl font-bold md:text-3xl" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    Schwafheimer Hofladen Fechner – Kartoffeln
+                  </h2>
+                  <p className="mt-4 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
+                    Bauer Fechner aus Moers-Schwafheim baut Kartoffeln auf einer
+                    beeindruckenden Fläche so groß wie rund 250 Fußballfelder an.
+                    Erhältlich in den Sorten <strong>festkochend</strong>,{" "}
+                    <strong>vorwiegend festkochend</strong> und <strong>mehlig</strong> –
+                    frisch geerntet und direkt aus der Region.
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-2 gap-3">
+                    <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
+                      <p className="text-sm text-muted-foreground">Kartoffeln</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">2,00 €</p>
+                      <p className="text-xs text-muted-foreground">pro kg</p>
+                    </div>
+                    <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
+                      <p className="text-sm text-muted-foreground">Ab 5 kg</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">1,60 €</p>
+                      <p className="text-xs text-muted-foreground">pro kg</p>
+                    </div>
+                  </div>
+
+                  <Button asChild className="mt-6 w-fit rounded-full">
+                    <Link to="/produkte?kategorie=kartoffeln">
+                      Kartoffeln ansehen <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
+                <div className="order-1 grid grid-cols-2 gap-1 md:order-2 md:grid-cols-1">
+                  <div className="relative aspect-[4/3] md:aspect-auto">
+                    <img
+                      src={fechnerKartoffeln}
+                      alt="Frisch geerntete Kartoffeln vom Hof Fechner"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div className="relative aspect-[4/3] md:aspect-auto">
+                    <img
+                      src={fechnerFeld}
+                      alt="Kartoffelfeld vom Schwafheimer Hofladen Fechner"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
