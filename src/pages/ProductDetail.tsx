@@ -82,6 +82,13 @@ const ProductDetail = () => {
                 {product.description}
               </p>
 
+              {product.husbandry && (
+                <div className="mt-4 rounded-lg border border-primary/20 bg-primary/5 p-4">
+                  <p className="text-sm font-semibold text-primary">Haltung</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{product.husbandry}</p>
+                </div>
+              )}
+
               <div className="mt-8">
                 <span className="text-3xl font-bold text-primary">
                   {product.price.toFixed(2).replace(".", ",")} €
