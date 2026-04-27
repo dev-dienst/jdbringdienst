@@ -40,13 +40,28 @@ const ProductDetail = () => {
           </Button>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {/* Image */}
-            <div className="overflow-hidden rounded-xl">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="aspect-square h-full w-full object-cover"
-              />
+            {/* Images */}
+            <div className="space-y-3">
+              <div className="overflow-hidden rounded-xl">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="aspect-square h-full w-full object-cover"
+                />
+              </div>
+              {product.images && product.images.length > 1 && (
+                <div className="grid grid-cols-2 gap-3">
+                  {product.images.slice(1).map((img, idx) => (
+                    <div key={idx} className="overflow-hidden rounded-xl">
+                      <img
+                        src={img}
+                        alt={`${product.name} – Eindruck vom Hof`}
+                        className="aspect-square h-full w-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Info */}
