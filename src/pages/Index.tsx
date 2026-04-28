@@ -17,6 +17,7 @@ const featuredProducts = products.slice(0, 4);
 
 const Index = () => {
   const [showMore, setShowMore] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
@@ -296,9 +297,82 @@ const Index = () => {
                 keine Zwischenhändler – nur frische, ehrliche Produkte aus der Region.
                 Jeder Einkauf unterstützt die Landwirte in deiner Nähe und fördert eine nachhaltige Landwirtschaft.
               </p>
-              <Button variant="outline" className="mt-6 rounded-full">
-                Mehr erfahren
+              <Button
+                variant="outline"
+                className="mt-6 rounded-full"
+                onClick={() => setShowAbout((v) => !v)}
+                aria-expanded={showAbout}
+              >
+                {showAbout ? (
+                  <>Weniger anzeigen <ChevronUp className="ml-2 h-4 w-4" /></>
+                ) : (
+                  <>Mehr erfahren <ChevronDown className="ml-2 h-4 w-4" /></>
+                )}
               </Button>
+
+              {showAbout && (
+                <div
+                  className="mx-auto mt-8 max-w-2xl space-y-6 text-left text-muted-foreground animate-in fade-in slide-in-from-top-2 duration-300"
+                  style={{ fontFamily: "'Lora', serif" }}
+                >
+                  <h3 className="text-2xl font-bold text-foreground" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    JD Bringdienst
+                  </h3>
+                  <p className="leading-relaxed">
+                    JD Bringdienst verbindet regionale Bauernhöfe direkt mit den Menschen in der
+                    Umgebung. Ich fahre selbst zu ausgewählten Höfen, nehme dort frische, saisonale
+                    Produkte mit und bringe sie gesammelt einmal pro Woche direkt zu den Kunden nach Hause.
+                  </p>
+                  <p className="leading-relaxed">
+                    Der Fokus liegt auf ehrlicher, regionaler Versorgung ohne Umwege über Lager oder
+                    große Handelsketten. Die Produkte kommen dort an, wo sie gebraucht werden – frisch,
+                    direkt und nachvollziehbar.
+                  </p>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground" style={{ fontFamily: "'Playfair Display', serif" }}>
+                      Ablauf
+                    </h4>
+                    <p className="mt-2 leading-relaxed">
+                      Ich fahre im Laufe der Woche zu den regionalen Bauernhöfen und sammle dort die
+                      verfügbaren Produkte ein. Kunden geben ihre Bestellung im Voraus auf, sodass
+                      ich gezielt einkaufen und planen kann.
+                    </p>
+                    <p className="mt-2 leading-relaxed">
+                      Einmal pro Woche, immer samstags, erfolgt die gebündelte Auslieferung direkt an
+                      die Kunden. Die Lieferung ist fest eingeplant, sodass eine klare Struktur
+                      entsteht, ohne dass der Kunde sich ständig darum kümmern muss.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground" style={{ fontFamily: "'Playfair Display', serif" }}>
+                      Für wen das gedacht ist
+                    </h4>
+                    <p className="mt-2 leading-relaxed">
+                      Der Service richtet sich an Menschen, die Wert auf regionale Lebensmittel legen
+                      und ihre Versorgung bewusst einfacher gestalten möchten. Besonders für alle,
+                      die regelmäßig frische Produkte beziehen wollen, ohne selbst Zeit für einzelne
+                      Einkäufe auf Höfen oder Märkten aufzuwenden.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground" style={{ fontFamily: "'Playfair Display', serif" }}>
+                      Was JD Bringdienst ausmacht
+                    </h4>
+                    <p className="mt-2 leading-relaxed">
+                      JD Bringdienst steht für direkte Wege zwischen Erzeuger und Kunde. Keine
+                      Zwischenlagerung, keine unnötigen Transportketten, sondern ein klarer Ablauf
+                      vom Hof bis zur Haustür.
+                    </p>
+                    <p className="mt-2 leading-relaxed">
+                      Die Arbeit ist persönlich organisiert, direkt und transparent. Der Kunde weiß,
+                      wo die Produkte herkommen und wann sie ankommen.
+                    </p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </section>
