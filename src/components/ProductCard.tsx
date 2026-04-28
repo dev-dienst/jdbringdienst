@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShoppingCart } from "lucide-react";
+import { Phone } from "lucide-react";
 import type { Product } from "@/lib/mock-data";
 
 interface ProductCardProps {
@@ -34,17 +33,20 @@ export function ProductCard({ product }: ProductCardProps) {
             {product.name}
           </h3>
         </Link>
-        <div className="mt-3 flex items-center justify-between">
+        <div className="mt-3 flex items-end justify-between gap-2">
           <div>
             <span className="text-lg font-bold text-primary">
               {product.price.toFixed(2).replace(".", ",")} €
             </span>
             <span className="text-sm text-muted-foreground"> / {product.unit}</span>
           </div>
-          <Button size="icon" variant="outline" className="h-9 w-9 rounded-full border-primary/30 hover:bg-primary hover:text-primary-foreground">
-            <ShoppingCart className="h-4 w-4" />
-          </Button>
+          <span className="flex items-center gap-1 rounded-full bg-primary/10 px-2 py-1 text-xs font-medium text-primary">
+            <Phone className="h-3 w-3" /> Nur telefonisch
+          </span>
         </div>
+        <p className="mt-2 text-[11px] text-muted-foreground">
+          Preise werden wöchentlich aktualisiert.
+        </p>
       </CardContent>
     </Card>
   );
