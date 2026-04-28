@@ -4,7 +4,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { products } from "@/lib/mock-data";
-import { ShoppingCart, ArrowLeft, MapPin } from "lucide-react";
+import { ArrowLeft, MapPin } from "lucide-react";
+import { OrderNotice } from "@/components/OrderNotice";
 
 const ProductDetail = () => {
   const { id } = useParams();
