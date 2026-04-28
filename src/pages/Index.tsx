@@ -24,7 +24,7 @@ const Index = () => {
         {/* Hero */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0">
-            <img src={heroImage} alt="Frischer Bauernmarkt" className="h-full w-full object-cover" />
+            <img src={heroImage} alt="JD Bringdienst – Frische vom Bauernhof" className="h-full w-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 to-foreground/30" />
           </div>
           <div className="container relative py-24 md:py-36">
@@ -278,7 +278,7 @@ const Index = () => {
         <section className="py-16">
           <div className="container">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold">Über unseren Bauernmarkt</h2>
+              <h2 className="text-3xl font-bold">Über JD Bringdienst</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
                 Wir verbinden lokale Bauern und Erzeuger direkt mit dir. Keine langen Transportwege,
                 keine Zwischenhändler – nur frische, ehrliche Produkte aus der Region.
