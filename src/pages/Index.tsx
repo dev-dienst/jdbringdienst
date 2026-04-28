@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
+import { OrderNotice } from "@/components/OrderNotice";
 import { categories, products } from "@/lib/mock-data";
 import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
