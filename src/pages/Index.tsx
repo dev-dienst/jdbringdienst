@@ -99,6 +99,13 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Bestellhinweis */}
+        <section className="border-b bg-card py-8">
+          <div className="container max-w-3xl">
+            <OrderNotice />
+          </div>
+        </section>
+
         {/* Values */}
         <section className="border-b bg-card py-10">
           <div className="container flex flex-wrap items-center justify-center gap-8 md:gap-16">
