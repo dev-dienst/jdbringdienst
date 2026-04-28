@@ -16,6 +16,13 @@ export function Footer() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Frische Produkte von regionalen Bauern – direkt zu Ihnen nach Hause. Qualität, die man schmeckt.
             </p>
+            <div className="mt-4 rounded-lg border border-primary/30 bg-primary/5 p-3 text-xs leading-relaxed text-muted-foreground">
+              <p className="font-semibold text-foreground">Bestellungen ausschließlich telefonisch.</p>
+              <p className="mt-1">
+                Eine Online-Bestellung steht nicht zur Auswahl und wird nicht angeboten.
+                Preise werden wöchentlich aktualisiert.
+              </p>
+            </div>
           </div>
 
           <div>
