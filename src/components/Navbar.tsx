@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, Menu, X, Leaf } from "lucide-react";
+import { Menu, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { useState } from "react";
+import { OrderNotice } from "@/components/OrderNotice";
 
 const navLinks = [
   { to: "/", label: "Startseite" },
