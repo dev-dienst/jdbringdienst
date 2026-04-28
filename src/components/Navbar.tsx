@@ -18,7 +18,7 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           <Leaf className="h-7 w-7 text-primary" />
           <span className="text-xl font-bold tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Bauernmarkt
+            JD Bringdienst
           </span>
         </Link>
 
