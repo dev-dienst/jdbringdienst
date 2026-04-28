@@ -92,11 +92,11 @@ const ProductDetail = () => {
 
               <div className="mt-8">
                 <span className="text-3xl font-bold text-primary">
-                  {product.price.toFixed(2).replace(".", ",")} €
+                  ca. {product.price.toFixed(2).replace(".", ",")} €
                 </span>
                 <span className="text-muted-foreground"> / {product.unit}</span>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Preise werden wöchentlich aktualisiert.
+                  Richtpreis – unverbindlich. Wöchentliche Aktualisierung. Angaben ohne Gewähr.
                 </p>
               </div>
 

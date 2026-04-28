@@ -92,7 +92,7 @@ const Index = () => {
               <div className="mt-8 flex gap-3">
                 <Button asChild size="lg" className="rounded-full">
                   <Link to="/produkte">
-                    Jetzt entdecken <ArrowRight className="ml-2 h-4 w-4" />
+                    Sortiment ansehen <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -202,12 +202,12 @@ const Index = () => {
                   <div className="mt-6 grid grid-cols-2 gap-3">
                     <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
                       <p className="text-sm text-muted-foreground">Eier Größe M</p>
-                      <p className="mt-1 text-2xl font-bold text-primary">0,33 €</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">ca. 0,33 €</p>
                       <p className="text-xs text-muted-foreground">pro Stück</p>
                     </div>
                     <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
                       <p className="text-sm text-muted-foreground">Eier Größe L</p>
-                      <p className="mt-1 text-2xl font-bold text-primary">0,38 €</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">ca. 0,38 €</p>
                       <p className="text-xs text-muted-foreground">pro Stück</p>
                     </div>
                   </div>
@@ -248,12 +248,12 @@ const Index = () => {
                   <div className="mt-6 grid grid-cols-2 gap-3">
                     <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
                       <p className="text-sm text-muted-foreground">Kartoffeln</p>
-                      <p className="mt-1 text-2xl font-bold text-primary">2,00 €</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">ca. 2,00 €</p>
                       <p className="text-xs text-muted-foreground">pro kg</p>
                     </div>
                     <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
                       <p className="text-sm text-muted-foreground">Ab 5 kg</p>
-                      <p className="mt-1 text-2xl font-bold text-primary">1,60 €</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">ca. 1,60 €</p>
                       <p className="text-xs text-muted-foreground">pro kg</p>
                     </div>
                   </div>
@@ -293,9 +293,9 @@ const Index = () => {
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold">Über JD Bringdienst</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
-                Wir verbinden lokale Bauern und Erzeuger direkt mit dir. Keine langen Transportwege,
+                Ich verbinde lokale Bauern und Erzeuger direkt mit dir. Keine langen Transportwege,
                 keine Zwischenhändler – nur frische, ehrliche Produkte aus der Region.
-                Jeder Einkauf unterstützt die Landwirte in deiner Nähe und fördert eine nachhaltige Landwirtschaft.
+                Wer hier mitmacht, unterstützt die Landwirte in der Nähe und eine nachhaltige Landwirtschaft.
               </p>
               <Button
                 variant="outline"
