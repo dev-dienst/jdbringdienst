@@ -31,6 +31,7 @@ const Products = () => {
 
         <section className="py-8">
           <div className="container">
+            <OrderNotice className="mb-8" />
             {/* Filters */}
             <div className="mb-8 flex flex-wrap gap-2">
               <Button
