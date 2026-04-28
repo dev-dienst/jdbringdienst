@@ -7,7 +7,8 @@ import { OrderNotice } from "@/components/OrderNotice";
 
 const navLinks = [
   { to: "/", label: "Startseite" },
-  { to: "/produkte", label: "Produkte" },
+  { to: "/produkte", label: "Sortiment" },
+  { to: "/datenschutz", label: "Datenschutz" },
 ];
 
 export function Navbar() {
