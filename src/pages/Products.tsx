@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
+import { OrderNotice } from "@/components/OrderNotice";
 import { categories, products } from "@/lib/mock-data";
 
 const Products = () => {
@@ -30,6 +31,7 @@ const Products = () => {
 
         <section className="py-8">
           <div className="container">
+            <OrderNotice className="mb-8" />
             {/* Filters */}
             <div className="mb-8 flex flex-wrap gap-2">
               <Button

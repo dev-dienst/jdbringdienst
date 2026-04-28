@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
+import { OrderNotice } from "@/components/OrderNotice";
 import { categories, products } from "@/lib/mock-data";
 import { ArrowRight, Truck, Leaf, Heart, ChevronDown, ChevronUp } from "lucide-react";
 import heroImage from "@/assets/hero-farm.jpg";
@@ -95,6 +96,13 @@ const Index = () => {
                 </Button>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Bestellhinweis */}
+        <section className="border-b bg-card py-8">
+          <div className="container max-w-3xl">
+            <OrderNotice />
           </div>
         </section>
 
@@ -203,6 +211,8 @@ const Index = () => {
                     </div>
                   </div>
 
+                  <OrderNotice variant="inline" className="mt-4" />
+
                   <Button asChild className="mt-6 w-fit rounded-full">
                     <Link to="/produkte?kategorie=eier">
                       Eier ansehen <ArrowRight className="ml-2 h-4 w-4" />
@@ -246,6 +256,8 @@ const Index = () => {
                       <p className="text-xs text-muted-foreground">pro kg</p>
                     </div>
                   </div>
+
+                  <OrderNotice variant="inline" className="mt-4" />
 
                   <Button asChild className="mt-6 w-fit rounded-full">
                     <Link to="/produkte?kategorie=kartoffeln">
