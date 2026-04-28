@@ -45,7 +45,7 @@ export function ProductCard({ product }: ProductCardProps) {
           </span>
         </div>
         <p className="mt-2 text-[11px] text-muted-foreground">
-          Preise werden wöchentlich aktualisiert.
+          Preisangabe unverbindlich, wöchentliche Aktualisierung – Angaben ohne Gewähr.
         </p>
       </CardContent>
     </Card>

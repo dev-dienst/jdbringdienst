@@ -14,13 +14,15 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Frische Produkte von regionalen Bauern – direkt zu Ihnen nach Hause. Qualität, die man schmeckt.
+              Informationen über mein Angebot: frische Produkte von regionalen Höfen,
+              persönlich ausgeliefert.
             </p>
             <div className="mt-4 rounded-lg border border-primary/30 bg-primary/5 p-3 text-xs leading-relaxed text-muted-foreground">
               <p className="font-semibold text-foreground">Bestellungen ausschließlich telefonisch.</p>
               <p className="mt-1">
-                Eine Online-Bestellung steht nicht zur Auswahl und wird nicht angeboten.
-                Preise werden wöchentlich aktualisiert.
+                Diese Website ist eine reine Informationsseite. Es findet kein Online-Verkauf
+                statt. Preisangaben sind unverbindlich und dienen nur der Information; sie
+                können sich wöchentlich ändern.
               </p>
             </div>
           </div>
@@ -29,16 +31,28 @@ export function Footer() {
             <h4 className="mb-4 font-semibold">Navigation</h4>
             <div className="flex flex-col gap-2">
               <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Startseite</Link>
-              <Link to="/produkte" className="text-sm text-muted-foreground hover:text-primary transition-colors">Produkte</Link>
+              <Link to="/produkte" className="text-sm text-muted-foreground hover:text-primary transition-colors">Sortiment</Link>
+              <Link to="/datenschutz" className="text-sm text-muted-foreground hover:text-primary transition-colors">Datenschutz</Link>
             </div>
           </div>
 
           <div>
             <h4 className="mb-4 font-semibold">Impressum</h4>
             <div className="flex flex-col gap-3 text-sm text-muted-foreground">
+              <div>
+                <span className="font-medium text-foreground">Angaben gemäß § 5 DDG (TMG):</span>
+                <br />
+                Dennis Marcinkowski
+              </div>
               <div className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <span>Prinz-Regent-Straße 27a, 47167 Duisburg</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <a href="tel:+4901748911036" className="hover:text-primary transition-colors">
+                  0174 8911036
+                </a>
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
@@ -57,12 +71,19 @@ export function Footer() {
                 <br />
                 Es wird keine Umsatzsteuer berechnet.
               </div>
+              <div className="leading-relaxed">
+                <span className="font-medium text-foreground">
+                  Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:
+                </span>
+                <br />
+                Dennis Marcinkowski (Anschrift wie oben)
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t pt-6 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} JD Bringdienst. Alle Rechte vorbehalten.
+        <div className="mt-8 border-t pt-6 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} JD Bringdienst – Dennis Marcinkowski. Alle Angaben ohne Gewähr.
         </div>
       </div>
     </footer>

@@ -53,8 +53,10 @@ export function OrderNotice({ variant = "card", className = "" }: OrderNoticePro
             Bestellungen ausschließlich telefonisch
           </p>
           <p className="mt-1 leading-relaxed text-muted-foreground">
-            Eine Online-Bestellung steht nicht zur Auswahl und wird nicht angeboten.
-            Die <strong>Preise werden wöchentlich aktualisiert</strong>.
+            Diese Seite ist eine reine Informationsseite – es findet kein
+            Online-Verkauf statt. Eine Bestellung über das Internet wird nicht
+            angeboten. Alle <strong>Preisangaben sind unverbindlich</strong> und
+            werden wöchentlich aktualisiert (Angaben ohne Gewähr).
           </p>
         </div>
       </div>
