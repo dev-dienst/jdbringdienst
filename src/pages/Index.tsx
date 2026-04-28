@@ -17,6 +17,7 @@ const featuredProducts = products.slice(0, 4);
 
 const Index = () => {
   const [showMore, setShowMore] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
