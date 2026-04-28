@@ -36,7 +36,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <div className="mt-3 flex items-end justify-between gap-2">
           <div>
             <span className="text-lg font-bold text-primary">
-              {product.price.toFixed(2).replace(".", ",")} €
+              ca. {product.price.toFixed(2).replace(".", ",")} €
             </span>
             <span className="text-sm text-muted-foreground"> / {product.unit}</span>
           </div>

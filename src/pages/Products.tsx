@@ -22,9 +22,10 @@ const Products = () => {
       <main className="flex-1">
         <section className="bg-card py-10">
           <div className="container">
-            <h1 className="text-3xl font-bold">Unsere Produkte</h1>
+            <h1 className="text-3xl font-bold">Unser Sortiment</h1>
             <p className="mt-2 text-muted-foreground">
-              Frisch, regional und mit Liebe erzeugt
+              Übersicht über die Produkte, die ich aktuell von meinen Partnerhöfen mitbringe.
+              Diese Seite dient ausschließlich der Information – Bestellungen sind nur telefonisch möglich.
             </p>
           </div>
         </section>

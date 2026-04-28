@@ -42,11 +42,11 @@ export const products: Product[] = [
     category: "eier",
     farmer: "Hof Eickhaus (Moers-Schwafheim)",
     description:
-      "Frische Eier aus Bodenhaltung vom Hof Eickhaus. Die Hühner werden mit eigener Fütterung versorgt und in einem hofeigenen Stall gehalten – mit geschlossenem und offenem Bereich, sodass die Tiere ausreichend Platz und Sonne haben.",
+      "Frische Eier vom Hof Eickhaus. Die Hühner werden mit eigener Fütterung versorgt und in einem hofeigenen Stall gehalten – mit geschlossenem und offenem Bereich, sodass die Tiere ausreichend Platz und Sonne haben.",
     image: eierEickhaus,
     images: [eierEickhaus, hofEickhausStall],
     badge: "Größe M",
-    husbandry: "Bodenhaltung mit offenem Außenbereich – eigene Fütterung",
+    husbandry: "Hofeigener Stall mit geschlossenem und offenem Bereich – eigene Fütterung",
   },
   {
     id: "2",
@@ -56,11 +56,11 @@ export const products: Product[] = [
     category: "eier",
     farmer: "Hof Eickhaus (Moers-Schwafheim)",
     description:
-      "Frische Eier aus Bodenhaltung vom Hof Eickhaus. Die Hühner werden mit eigener Fütterung versorgt und in einem hofeigenen Stall gehalten – mit geschlossenem und offenem Bereich, sodass die Tiere ausreichend Platz und Sonne haben.",
+      "Frische Eier vom Hof Eickhaus. Die Hühner werden mit eigener Fütterung versorgt und in einem hofeigenen Stall gehalten – mit geschlossenem und offenem Bereich, sodass die Tiere ausreichend Platz und Sonne haben.",
     image: eierEickhaus,
     images: [eierEickhaus, hofEickhausStall],
     badge: "Größe L",
-    husbandry: "Bodenhaltung mit offenem Außenbereich – eigene Fütterung",
+    husbandry: "Hofeigener Stall mit geschlossenem und offenem Bereich – eigene Fütterung",
   },
   {
     id: "3",
@@ -70,11 +70,11 @@ export const products: Product[] = [
     category: "kartoffeln",
     farmer: "Schwafheimer Hofladen Fechner (Moers-Schwafheim)",
     description:
-      "Frische Kartoffeln vom Schwafheimer Hofladen Fechner. Bauer Fechner baut Kartoffeln auf einer Fläche so groß wie rund 250 Fußballfelder an. Erhältlich in den Sorten festkochend, vorwiegend festkochend und mehlig. Preis: 2,00 € pro kg – ab 5 kg nur 1,60 € pro kg.",
+      "Frische Kartoffeln vom Schwafheimer Hofladen Fechner. Bauer Fechner baut Kartoffeln auf einer Fläche so groß wie rund 250 Fußballfelder an. Erhältlich in den Sorten festkochend, vorwiegend festkochend und mehlig. Richtpreis: ca. 2,00 € pro kg – ab 5 kg ca. 1,60 € pro kg (Angaben unverbindlich).",
     image: fechnerKartoffelnTueten,
     images: [fechnerKartoffelnTueten, fechnerKartoffeln, fechnerFeld],
     badge: "Regional",
-    husbandry: "Festkochend, vorwiegend festkochend und mehlig – ab 5 kg 1,60 €/kg",
+    husbandry: "Festkochend, vorwiegend festkochend und mehlig – ab 5 kg ca. 1,60 €/kg",
   },
   {
     id: "4",
@@ -82,9 +82,9 @@ export const products: Product[] = [
     price: 5.50,
     unit: "500g Schale",
     category: "erdbeeren",
-    farmer: "Beerenhof Sommerfeld",
+    farmer: "Regionaler Partnerhof",
     description:
-      "Sonnengereifte Erdbeeren, frisch vom Feld gepflückt. Süß, aromatisch und voller Geschmack. 5,50 € pro 500g Schale.",
+      "Sonnengereifte Erdbeeren, frisch vom Feld gepflückt. Süß, aromatisch und voller Geschmack. Richtpreis: ca. 5,50 € pro 500g-Schale (Angabe unverbindlich).",
     image: erdbeerenSchalen,
     images: [erdbeerenSchalen, erdbeerenFeld],
     badge: "Saison",
