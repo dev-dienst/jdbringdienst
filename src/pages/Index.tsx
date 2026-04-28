@@ -211,6 +211,8 @@ const Index = () => {
                     </div>
                   </div>
 
+                  <OrderNotice variant="inline" className="mt-4" />
+
                   <Button asChild className="mt-6 w-fit rounded-full">
                     <Link to="/produkte?kategorie=eier">
                       Eier ansehen <ArrowRight className="ml-2 h-4 w-4" />
