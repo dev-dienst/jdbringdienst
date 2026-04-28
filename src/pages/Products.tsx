@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ProductCard } from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
+import { OrderNotice } from "@/components/OrderNotice";
 import { categories, products } from "@/lib/mock-data";
 
 const Products = () => {
