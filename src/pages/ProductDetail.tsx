@@ -95,11 +95,12 @@ const ProductDetail = () => {
                   {product.price.toFixed(2).replace(".", ",")} €
                 </span>
                 <span className="text-muted-foreground"> / {product.unit}</span>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Preise werden wöchentlich aktualisiert.
+                </p>
               </div>
 
-              <Button size="lg" className="mt-6 w-full rounded-full sm:w-auto">
-                <ShoppingCart className="mr-2 h-5 w-5" /> In den Warenkorb
-              </Button>
+              <OrderNotice className="mt-6" />
             </div>
           </div>
         </div>
