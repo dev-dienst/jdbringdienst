@@ -12,6 +12,8 @@ import heroImage from "@/assets/hero-farm.jpg";
 import hofEickhausStall2 from "@/assets/hof-eickhaus-stall-2.jpg";
 import fechnerFeld from "@/assets/fechner-feld.jpg";
 import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
+import klantenErdbeerfeld from "@/assets/klanten-erdbeerfeld.jpg";
+import klantenTunnel from "@/assets/klanten-tunnel.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
