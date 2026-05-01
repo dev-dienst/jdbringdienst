@@ -128,7 +128,7 @@ const Index = () => {
           <div className="container">
             <h2 className="text-center text-3xl font-bold">Unsere Kategorien</h2>
             <p className="mx-auto mt-2 max-w-md text-center text-muted-foreground">
-              Von frischem Obst bis zu handgemachtem Brot – entdecke unser vielfältiges Sortiment.
+              Frische Eier, Kartoffeln und Erdbeeren – direkt von ausgewählten Höfen aus der Region.
             </p>
             <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
               {categories.map((cat) => (
