@@ -12,6 +12,8 @@ import heroImage from "@/assets/hero-farm.jpg";
 import hofEickhausStall2 from "@/assets/hof-eickhaus-stall-2.jpg";
 import fechnerFeld from "@/assets/fechner-feld.jpg";
 import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
+import klantenErdbeerfeld from "@/assets/klanten-erdbeerfeld.jpg";
+import klantenTunnel from "@/assets/klanten-tunnel.jpg";
 
 const featuredProducts = products.slice(0, 4);
 
@@ -281,6 +283,67 @@ const Index = () => {
                       className="h-full w-full object-cover"
                     />
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Wickrather Bauernladen Klanten */}
+        <section className="pb-16">
+          <div className="container">
+            <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-border/50 bg-card shadow-sm">
+              <div className="grid md:grid-cols-2">
+                <div className="grid grid-cols-2 gap-1 md:grid-cols-1">
+                  <div className="relative aspect-[4/3] md:aspect-auto">
+                    <img
+                      src={klantenErdbeerfeld}
+                      alt="Erdbeerfeld mit Folientunneln vom Wickrather Bauernladen Klanten"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <div className="relative aspect-[4/3] md:aspect-auto">
+                    <img
+                      src={klantenTunnel}
+                      alt="Blick in einen Erdbeer-Folientunnel vom Wickrather Bauernladen Klanten"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="flex flex-col justify-center p-6 md:p-10">
+                  <span className="text-sm font-medium uppercase tracking-wide text-primary">
+                    Unser Partner
+                  </span>
+                  <h2 className="mt-2 text-2xl font-bold md:text-3xl" style={{ fontFamily: "'Playfair Display', serif" }}>
+                    Wickrather Bauernladen Klanten – Freilanderdbeeren
+                  </h2>
+                  <p className="mt-4 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
+                    Der Wickrather Bauernladen Klanten in Kamp-Lintfort baut seine Erdbeeren auf
+                    weitläufigen Feldern direkt in der Region an. Die Pflanzen wachsen im Freiland
+                    und werden teilweise durch Folientunnel geschützt – so reifen die Früchte
+                    wettergeschützt und sonnenverwöhnt aus.
+                  </p>
+                  <p className="mt-3 leading-relaxed text-muted-foreground" style={{ fontFamily: "'Lora', serif" }}>
+                    Geerntet wird von Hand, wenn die Erdbeeren wirklich reif sind. Das Ergebnis:
+                    aromatische, saftige Früchte mit dem typischen, vollen Erdbeergeschmack –
+                    frisch vom Feld in deine Schale.
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-1 gap-3">
+                    <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 text-center">
+                      <p className="text-sm text-muted-foreground">Erdbeeren</p>
+                      <p className="mt-1 text-2xl font-bold text-primary">ca. 5,50 €</p>
+                      <p className="text-xs text-muted-foreground">pro 500 g Schale</p>
+                    </div>
+                  </div>
+
+                  <OrderNotice variant="inline" className="mt-4" />
+
+                  <Button asChild className="mt-6 w-fit rounded-full">
+                    <Link to="/produkte?kategorie=erdbeeren">
+                      Erdbeeren ansehen <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>
