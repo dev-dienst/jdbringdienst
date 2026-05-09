@@ -414,9 +414,7 @@ const Index = () => {
                     </h4>
                     <p className="mt-2 leading-relaxed">
                       Der Service richtet sich an Menschen, die Wert auf regionale Lebensmittel legen
-                      und ihre Versorgung bewusst einfacher gestalten möchten. Besonders für alle,
-                      die regelmäßig frische Produkte beziehen wollen, ohne selbst Zeit für einzelne
-                      Einkäufe auf Höfen oder Märkten aufzuwenden.
+                      und ihre Versorgung bewusst einfacher gestalten möchten.
                     </p>
                   </div>
 
