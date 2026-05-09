@@ -1,4 +1,4 @@
-import { Phone, Info } from "lucide-react";
+import { Phone } from "lucide-react";
 
 type Variant = "bar" | "card" | "inline";
 
