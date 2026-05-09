@@ -1,4 +1,4 @@
-import { Phone, Info } from "lucide-react";
+import { Phone } from "lucide-react";
 
 type Variant = "bar" | "card" | "inline";
 
@@ -9,21 +9,15 @@ interface OrderNoticeProps {
 
 /**
  * Hinweis: Bestellungen sind ausschließlich telefonisch möglich.
- * Preise werden wöchentlich aktualisiert.
  */
 export function OrderNotice({ variant = "card", className = "" }: OrderNoticeProps) {
   if (variant === "bar") {
     return (
       <div className={`w-full bg-primary text-primary-foreground ${className}`}>
-        <div className="container flex flex-col items-center justify-center gap-1 py-2 text-center text-xs sm:flex-row sm:gap-4 sm:text-sm">
+        <div className="container flex items-center justify-center py-2 text-center text-xs sm:text-sm">
           <span className="flex items-center gap-2">
             <Phone className="h-4 w-4" />
             Bestellungen ausschließlich telefonisch – keine Online-Bestellung möglich.
-          </span>
-          <span className="hidden sm:inline opacity-70">•</span>
-          <span className="flex items-center gap-2">
-            <Info className="h-4 w-4" />
-            Preise werden wöchentlich aktualisiert.
           </span>
         </div>
       </div>
@@ -36,7 +30,7 @@ export function OrderNotice({ variant = "card", className = "" }: OrderNoticePro
         <Phone className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
         <span>
           Bestellungen sind ausschließlich <strong>telefonisch</strong> möglich.
-          Eine Online-Bestellung wird nicht angeboten. Preise werden wöchentlich aktualisiert.
+          Eine Online-Bestellung wird nicht angeboten.
         </span>
       </p>
     );
@@ -55,8 +49,7 @@ export function OrderNotice({ variant = "card", className = "" }: OrderNoticePro
           <p className="mt-1 leading-relaxed text-muted-foreground">
             Diese Seite ist eine reine Informationsseite – es findet kein
             Online-Verkauf statt. Eine Bestellung über das Internet wird nicht
-            angeboten. Alle <strong>Preisangaben sind unverbindlich</strong> und
-            werden wöchentlich aktualisiert (Angaben ohne Gewähr).
+            angeboten. Alle <strong>Preisangaben sind unverbindlich</strong>.
           </p>
         </div>
       </div>
