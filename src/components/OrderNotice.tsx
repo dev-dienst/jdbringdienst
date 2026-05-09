@@ -1,4 +1,4 @@
-import { Phone } from "lucide-react";
+import { Phone, Info } from "lucide-react";
 
 type Variant = "bar" | "card" | "inline";
 
@@ -14,10 +14,15 @@ export function OrderNotice({ variant = "card", className = "" }: OrderNoticePro
   if (variant === "bar") {
     return (
       <div className={`w-full bg-primary text-primary-foreground ${className}`}>
-        <div className="container flex items-center justify-center py-2 text-center text-xs sm:text-sm">
+        <div className="container flex flex-col items-center justify-center gap-1 py-2 text-center text-xs sm:flex-row sm:gap-4 sm:text-sm">
           <span className="flex items-center gap-2">
             <Phone className="h-4 w-4" />
             Bestellungen ausschließlich telefonisch – keine Online-Bestellung möglich.
+          </span>
+          <span className="hidden sm:inline opacity-70">•</span>
+          <span className="flex items-center gap-2">
+            <Info className="h-4 w-4" />
+            Preise werden wöchentlich aktualisiert.
           </span>
         </div>
       </div>
