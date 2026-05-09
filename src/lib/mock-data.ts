@@ -57,8 +57,8 @@ export const products: Product[] = [
     farmer: "Hof Eickhaus (Moers-Schwafheim)",
     description:
       "Frische Eier vom Hof Eickhaus. Die Hühner werden mit eigener Fütterung versorgt und in einem hofeigenen Stall gehalten – mit geschlossenem und offenem Bereich, sodass die Tiere ausreichend Platz und Sonne haben.",
-    image: eierEickhaus,
-    images: [eierEickhaus, hofEickhausStall],
+    image: hofEickhausStall2,
+    images: [hofEickhausStall2, hofEickhausStall],
     badge: "Größe L",
     husbandry: "Hofeigener Stall mit geschlossenem und offenem Bereich – eigene Fütterung",
   },
