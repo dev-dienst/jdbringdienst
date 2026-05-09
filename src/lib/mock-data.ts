@@ -1,5 +1,5 @@
-import eierEickhaus from "@/assets/eier-eickhaus.jpg";
 import hofEickhausStall from "@/assets/hof-eickhaus-stall.jpg";
+import hofEickhausStall2 from "@/assets/hof-eickhaus-stall-2.jpg";
 import fechnerFeld from "@/assets/fechner-feld.jpg";
 import fechnerKartoffeln from "@/assets/fechner-kartoffeln.jpg";
 import fechnerKartoffelnTueten from "@/assets/fechner-kartoffeln-tueten.jpg";
